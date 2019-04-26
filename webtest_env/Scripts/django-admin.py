@@ -1,4 +1,4 @@
-#!D:\GITfiles\webtest\webtest_env\Scripts\python.exe
+#!D:\GITfiles\webtest\webtest_env\Scripts\python3.exe
 from django.core import management
 
 if __name__ == "__main__":
