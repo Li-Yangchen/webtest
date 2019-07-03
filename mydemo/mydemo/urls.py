@@ -28,6 +28,10 @@ urlpatterns = [
     path(r'login_action/', views.login_action),
     path(r'event_manage/', views.event_manage),
     path(r'accounts/login/', views.index),
-    re_path(r'^search_name/$',views.search_name)
+    re_path(r'^search_name/$',views.search_name),
+    re_path(r'^guest_manage/$',views.guest_manage),
+    re_path(r'^search_realname/$',views.search_realname),
 ]
-              #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
+#+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
