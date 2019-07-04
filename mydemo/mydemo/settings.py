@@ -85,6 +85,7 @@ DATABASES = {
         'PASSWORD': 'uway_123',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+#            'init_command': "SET sql_mode='traditional'",
         }
 
     }

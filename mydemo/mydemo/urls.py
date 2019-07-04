@@ -31,6 +31,8 @@ urlpatterns = [
     re_path(r'^search_name/$',views.search_name),
     re_path(r'^guest_manage/$',views.guest_manage),
     re_path(r'^search_realname/$',views.search_realname),
+    re_path(r'^sign_index/(?P<eid>[0-9]+)/$',views.sign_index),
+
 ]
 
 
