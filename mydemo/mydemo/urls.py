@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,re_path
-#from django.conf.urls import url,include
+from django.conf.urls import url,include
 #from django.conf import settings
 #from django.conf.urls.static import static
 
@@ -34,6 +34,7 @@ urlpatterns = [
     re_path(r'^sign_index/(?P<eid>[0-9]+)/$',views.sign_index),
     re_path(r'^sign_index_action/(?P<eid>[0-9]+)/$',views.sign_index_action),
     re_path(r'^logout/$',views.logout),
+    url(r'^api/',include('myweb.urls',namespace="myweb"))
 
 ]
 
