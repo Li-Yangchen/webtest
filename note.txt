@@ -1,0 +1,12 @@
+
+项目名称：mydemo
+应用名称：myweb
+
+
+与pdf资料对应关系：
+mydemo------guest
+myweb-------sign
+
+
+页面访问流程：
+浏览器访问url--->urls.py--->views.py--->index.html
