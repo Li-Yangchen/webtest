@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'mydemo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '192.168.27.28',
-        'PORT': '3316',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
         'NAME': 'guest',
         'USER': 'root',
-        'PASSWORD': 'uway_123',
+        'PASSWORD': 'Uway123!',
         'OPTIONS': {
             'init_command': "SET sql_mode='NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,STRICT_TRANS_TABLES'",
 #            'init_command': "SET sql_mode='traditional'",
@@ -126,10 +126,8 @@ USE_TZ = False
 
 
 
-
-
 STATIC_URL = '/static/'
 
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
