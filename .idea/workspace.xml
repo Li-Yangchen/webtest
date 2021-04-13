@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d88884-23a0-43c7-8de6-f6660562cd77" name="Default Changelist" comment="20210106&#10;增加note文件">
+    <list default="true" id="45d88884-23a0-43c7-8de6-f6660562cd77" name="Default Changelist" comment="20210106&#10;修改mysql数据库地址，改为本地数据库">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webtest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webtest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydemo/mydemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/mydemo/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydemo/myweb/templates/event_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/myweb/templates/event_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydemo/myweb/templates/guest_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/myweb/templates/guest_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydemo/myweb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/myweb/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +60,9 @@
         <option value="$PROJECT_DIR$/mydemo/myweb/views_if.py" />
       </list>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="331" />
@@ -109,8 +115,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/webtest_env" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="webtest" sdk-home="D:\Program Files\Python37\python.exe">
+        <option name="mySdkHome" value="D:\Program Files\Python37\python.exe" />
+        <option name="myModuleName" value="webtest" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -350,14 +366,7 @@
       <option name="project" value="LOCAL" />
       <updated>1609918477096</updated>
     </task>
-    <task id="LOCAL-00028" summary="20210106&#10;增加note文件">
-      <created>1609926788040</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1609926788040</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -440,8 +449,7 @@
     <MESSAGE value="130页,接口" />
     <MESSAGE value="131页,接口" />
     <MESSAGE value="20210106&#10;修改mysql数据库地址，改为本地数据库" />
-    <MESSAGE value="20210106&#10;增加note文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="20210106&#10;增加note文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210106&#10;修改mysql数据库地址，改为本地数据库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

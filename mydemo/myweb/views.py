@@ -49,7 +49,7 @@ def search_name(request):
 def guest_manage(request):
     username = request.session.get('user', '')
     guest_list = Guest.objects.all()
-    paginator = Paginator(guest_list, 3)
+    paginator = Paginator(guest_list, 5)
     page = request.GET.get('page')
     try:
         contacts = paginator.page(page)
@@ -66,7 +66,7 @@ def search_realname(request):
     username = request.session.get('user', '')
     search_realname = request.GET.get("name", "")
     guest_list = Guest.objects.filter(realname__contains=search_realname)
-    paginator = Paginator(guest_list, 3)
+    paginator = Paginator(guest_list, 5)
     page = request.GET.get('page')
     try:
         contacts = paginator.page(page)
@@ -85,6 +85,7 @@ def sign_index(request, eid):
     return render(request, 'sign_index.html', {'event': event})
 
 
+#签到动作
 @login_required
 def sign_index_action(request, eid):
     username = request.session.get('user', '')
