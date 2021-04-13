@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="45d88884-23a0-43c7-8de6-f6660562cd77" name="Default Changelist" comment="20210106&#10;修改mysql数据库地址，改为本地数据库">
-      <change afterPath="$PROJECT_DIR$/note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webtest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webtest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydemo/mydemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/mydemo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydemo/myweb/templates/event_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/myweb/templates/event_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydemo/myweb/templates/guest_manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/myweb/templates/guest_manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydemo/myweb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydemo/myweb/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +115,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webtest_env" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="webtest" sdk-home="D:\Program Files\Python37\python.exe">
+        <option name="mySdkHome" value="D:\Program Files\Python37\python.exe" />
+        <option name="myModuleName" value="webtest" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

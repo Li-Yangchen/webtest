@@ -62,8 +62,8 @@
                   <td>{{ event.address }}</td>
                   <td>{{ event.start_time }}</td>
                   <td>
-                      <!--target="{{ event.id }}_blank"-->
-                      <a href="/sign_index/{{ event.id }}/" >签到</a>
+                      <!---->
+                      <a href="/sign_index/{{ event.id }}/" target="{{ event.id }}_blank">签到</a>
                   </td>
                 </tr>
              {% endfor %}
