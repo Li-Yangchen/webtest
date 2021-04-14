@@ -84,7 +84,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'Uway123!',
         'OPTIONS': {
-            'init_command': "SET sql_mode='NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,STRICT_TRANS_TABLES'",
+            'init_command': "SET sql_mode='NO_AUTO_CREATE_USER,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,STRICT_TRANS_TABLES'",
 #            'init_command': "SET sql_mode='traditional'",
         }
 
