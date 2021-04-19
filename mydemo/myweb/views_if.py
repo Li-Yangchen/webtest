@@ -39,6 +39,48 @@ def add_event(request):
     return JsonResponse({'status':200,'message':'add event success'})
 
 
+# 发布会查询
+def get_event_list(request):
+
+    eid = request.GET.get("eid", "")      # 发布会id
+    name = request.GET.get("name", "")    # 发布会名称
+
+    if eid == '' and name == '':
+        return JsonResponse({'status':10021,'message':'parameter error'})
+
+    if eid != '':
+        event = {}
+        try:
+            result = Event.objects.get(id=eid)
+        except ObjectDoesNotExist:
+            return JsonResponse({'status':10022, 'message':'query result is empty'})
+        else:
+            event['eid'] = result.id
+            event['name'] = result.name-
+            event['limit'] = result.limit
+            event['status'] = result.status
+            event['address'] = result.address
+            event['start_time'] = result.start_time
+            return JsonResponse({'status':200, 'message':'success', 'data':event})
+
+    if name != '':
+        datas = []
+        results = Event.objects.filter(name__contains=name)
+        if results:
+            for r in results:
+                event = {}
+                event['eid'] = r.id
+                event['name'] = r.name
+                event['limit'] = r.limit
+                event['status'] = r.status
+                event['address'] = r.address
+                event['start_time'] = r.start_time
+                datas.append(event)
+            return JsonResponse({'status':200, 'message':'success', 'data':datas})
+        else:
+            return JsonResponse({'status':10022, 'message':'query result is empty'})
+
+
 # 添加嘉宾接口
 def add_guest(request):
     eid =  request.POST.get('eid','')                # 关联发布会id
@@ -80,48 +122,6 @@ def add_guest(request):
         return JsonResponse({'status':10026,'message':'the event guest phone number repeat'})
 
     return JsonResponse({'status':200,'message':'add guest success'})
-
-
-# 发布会查询
-def get_event_list(request):
-
-    eid = request.GET.get("eid", "")      # 发布会id
-    name = request.GET.get("name", "")    # 发布会名称
-
-    if eid == '' and name == '':
-        return JsonResponse({'status':10021,'message':'parameter error'})
-
-    if eid != '':
-        event = {}
-        try:
-            result = Event.objects.get(id=eid)
-        except ObjectDoesNotExist:
-            return JsonResponse({'status':10022, 'message':'query result is empty'})
-        else:
-            event['eid'] = result.id
-            event['name'] = result.name
-            event['limit'] = result.limit
-            event['status'] = result.status
-            event['address'] = result.address
-            event['start_time'] = result.start_time
-            return JsonResponse({'status':200, 'message':'success', 'data':event})
-
-    if name != '':
-        datas = []
-        results = Event.objects.filter(name__contains=name)
-        if results:
-            for r in results:
-                event = {}
-                event['eid'] = r.id
-                event['name'] = r.name
-                event['limit'] = r.limit
-                event['status'] = r.status
-                event['address'] = r.address
-                event['start_time'] = r.start_time
-                datas.append(event)
-            return JsonResponse({'status':200, 'message':'success', 'data':datas})
-        else:
-            return JsonResponse({'status':10022, 'message':'query result is empty'})
 
 
 # 嘉宾查询接口
