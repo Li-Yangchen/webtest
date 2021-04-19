@@ -22,6 +22,7 @@ from django.conf.urls import url,include
 from myweb import views
 
 app_name = 'myweb'
+
 urlpatterns = [
     path(r'admin/', admin.site.urls),
     path(r'index/', views.index),
@@ -35,7 +36,7 @@ urlpatterns = [
     re_path(r'^sign_index/(?P<eid>[0-9]+)/$',views.sign_index),
     re_path(r'^sign_index_action/(?P<eid>[0-9]+)/$',views.sign_index_action),
     re_path(r'^logout/$',views.logout),
-    url(r'^api/',include(('myweb.urls','myweb'),namespace="myweb"))
+    url(r'^api/',include('myweb.urls',namespace="myweb"))
 
 ]
 

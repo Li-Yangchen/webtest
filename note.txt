@@ -12,3 +12,7 @@ myweb-------sign
 浏览器访问url--->urls.py--->views.py--->index.html
 
 
+arg=('myweb.urls','myweb')
+urlconf_module, app_name = arg
+
+urlconf_module

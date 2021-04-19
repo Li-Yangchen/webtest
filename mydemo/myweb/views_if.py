@@ -5,9 +5,10 @@ from myweb.models import Event, Guest
 from django.core.exceptions import ValidationError, ObjectDoesNotExist
 from django.db.utils import IntegrityError
 import time
-
+from django.views.decorators.csrf import csrf_exempt
 
 # 添加发布会接口
+@csrf_exempt        #解决发送post请求时提示403 forbidden问题
 def add_event(request):
     eid = request.POST.get('eid','')                 # 发布会id
     name = request.POST.get('name','')               # 发布会标题
@@ -56,7 +57,7 @@ def get_event_list(request):
             return JsonResponse({'status':10022, 'message':'query result is empty'})
         else:
             event['eid'] = result.id
-            event['name'] = result.name-
+            event['name'] = result.name
             event['limit'] = result.limit
             event['status'] = result.status
             event['address'] = result.address
