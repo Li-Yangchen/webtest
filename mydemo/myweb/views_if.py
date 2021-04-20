@@ -163,6 +163,7 @@ def get_guest_list(request):
 
 
 # 用户签到接口
+@csrf_exempt        #解决发送post请求时提示403 forbidden问题
 def user_sign(request):
     eid =  request.POST.get('eid','')       # 发布会id
     phone =  request.POST.get('phone','')   # 嘉宾手机号

@@ -12,7 +12,6 @@ myweb-------sign
 浏览器访问url--->urls.py--->views.py--->index.html
 
 
-arg=('myweb.urls','myweb')
-urlconf_module, app_name = arg
+https://docs.python-requests.org/zh_CN/latest/
 
-urlconf_module
+https://docs.python-requests.org/en/master/
